@@ -1,0 +1,5 @@
+#!/bin/bash
+set -euo pipefail && cd "$(dirname "${BASH_SOURCE[0]}")"
+
+# list AUR packages by installation date from oldest to latest
+pacman -Qqm | expac --timefmt='%F %T' '%n %v %l' - | sort -k3 | awk '{ print $1 }'

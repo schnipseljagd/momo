@@ -1,0 +1,14 @@
+#!/bin/bash
+set -euo pipefail && cd "$(dirname "${BASH_SOURCE[0]}")/.."
+
+# Overwrite all user configs with the Momo defaults.
+
+if [ "$EUID" -eq 0 ]; then
+  echo "Error: This script should not be run as root"
+  exit 1
+fi
+
+echo "Resetting all Momo configs"
+cp -R config/* ~/.config/
+cp default/bashrc ~/.bashrc
+echo '[[ -f ~/.bashrc ]] && . ~/.bashrc' | tee ~/.bash_profile >/dev/null
