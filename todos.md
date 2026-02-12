@@ -4,13 +4,13 @@ base:
  - [x] bluetui
 
 experience apps:
- - lazyvim
- - lazygit
- - lazydocker
- - opencode
+ - [x] lazyvim
+ - [x] lazygit
+ - [x] lazydocker
+ - [x] opencode
  - voxtype
  - mise
- - github cli
+ - [x] github cli
  - gitlab cli
  - pinta
  - libreoffice
