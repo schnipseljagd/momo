@@ -37,8 +37,8 @@ my apps:
 
 configs:
  - firefox
- - alacritty
- - ghostty
+ - ~~alacritty
+ - [x] ghostty
  - [x] niri/dms
  - [x] gtk
  - [x] bashrc

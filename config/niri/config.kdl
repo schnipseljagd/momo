@@ -710,7 +710,7 @@ binds {
     }
 
     // My Specifics
-    Mod+Return hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
+    Mod+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
 }
 
 include "dms/colors.kdl"
