@@ -37,3 +37,10 @@ if command -v zoxide &>/dev/null; then
     fi
   }
 fi
+
+if command -v hyfetch &>/dev/null; then
+  alias neofetch='/usr/bin/hyfetch'
+  alias neowofetch='/usr/bin/hyfetch'
+  alias fastfetch='/usr/bin/hyfetch'
+  alias zfetch='/usr/bin/hyfetch'
+fi
