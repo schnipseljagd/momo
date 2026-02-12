@@ -8,7 +8,7 @@ experience apps:
  - [x] lazygit
  - [x] lazydocker
  - [x] opencode
- - voxtype
+ - [x] voxtype
  - mise
  - [x] github cli
  - gitlab cli

@@ -6,5 +6,5 @@ if [ "$EUID" -eq 0 ]; then
   exit 1
 fi
 
-source install/config/all.sh
 source install/packaging/all.sh
+source install/config/all.sh
