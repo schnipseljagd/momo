@@ -3,4 +3,3 @@ set -euo pipefail && cd "$(dirname "${BASH_SOURCE[0]}")/../.."
 
 source install/packaging/base.sh
 source install/packaging/experience.sh
-source install/packaging/nvim.sh
