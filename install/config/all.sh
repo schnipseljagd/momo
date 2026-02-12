@@ -7,4 +7,4 @@ source install/config/greetd.sh
 source install/config/input-group.sh
 source install/config/localdb.sh
 source install/config/mimetypes.sh
-#source install/config/snapper.sh
+source install/config/snapper.sh
