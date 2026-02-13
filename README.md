@@ -3,6 +3,8 @@
 A modern Linux desktop environment on CachyOS. It uses [Niri](https://github.com/niri-wm/niri) as Wayland compositor and the [DankMaterialShell](https://github.com/AvengeMedia/DankMaterialShell).
 It borrows concepts and code from [Omarchy](https://github.com/basecamp/omarchy) and [Zirconium](https://github.com/zirconium-dev/zirconium).
 
+<img width="768" height="1016" alt="Image" src="https://github.com/user-attachments/assets/1959338f-ce27-46df-9f89-dffbc96303a5" />
+
 ## Installation
 
 1. Install CachyOS with Limine and Btrfs but don't pick a desktop environment.

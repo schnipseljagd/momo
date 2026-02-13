@@ -1,14 +1,14 @@
 #!/bin/bash
 set -euo pipefail
 
-ansi_art='
-▄▄▄      ▄▄▄
-████▄  ▄████
-███▀████▀███ ▄███▄ ███▄███▄ ▄███▄
-███  ▀▀  ███ ██ ██ ██ ██ ██ ██ ██
-███      ███ ▀███▀ ██ ██ ██ ▀███▀
-
-                                  '
+ansi_art='#
+#    ▄▄▄      ▄▄▄
+#    ████▄  ▄████
+#    ███▀████▀███ ▄███▄ ███▄███▄ ▄███▄
+#    ███  ▀▀  ███ ██ ██ ██ ██ ██ ██ ██
+#    ███      ███ ▀███▀ ██ ██ ██ ▀███▀
+#
+#                                      '
 
 clear
 echo -e "\n$ansi_art\n"
@@ -30,3 +30,6 @@ cd -
 
 echo -e "\nInstallation starting..."
 source ~/.local/share/momo/install.sh
+
+echo -e "\nStarting niri..."
+niri-session
