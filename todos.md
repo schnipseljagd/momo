@@ -36,12 +36,13 @@ my apps:
 
 
 configs:
- - firefox
+ - [x] firefox
  - ~~alacritty
  - [x] ghostty
  - [x] niri/dms
  - [x] gtk
  - [x] bashrc
+ - CachyOS postinstall: https://wiki.cachyos.org/configuration/post_install_setup/
 
 scripts:
  - [x] installer
