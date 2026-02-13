@@ -3,6 +3,7 @@ set -euo pipefail && cd "$(dirname "${BASH_SOURCE[0]}")/../.."
 
 source install/config/config.sh
 source install/config/input-group.sh
+source install/config/greeter-group.sh
 source install/config/localdb.sh
 source install/config/mimetypes.sh
 source install/config/snapper.sh
