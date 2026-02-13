@@ -20,10 +20,7 @@ layout {
 EOF
 
 # Configure greetd to use dms-greeter
-sudo tee /etc/greetd/config.toml >/dev/null <<EOF
-[general]
-service = "greetd-spawn"
-
+sudo tee /etc/greetd/config.toml >/dev/null <<'EOF'
 [terminal]
 vt = 1
 
