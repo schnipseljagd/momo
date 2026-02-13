@@ -8,7 +8,7 @@ sudo tee /etc/firefox/policies/policies.json >/dev/null <<'EOF'
     },
     "DisplayBookmarksToolbar": "default-off",
     "ExtensionSettings": {
-      "pywalfox@frewacom.org.xpi": {
+      "pywalfox@frewacom.org": {
         "installation_mode": "normal_installed",
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/pywalfox/latest.xpi",
         "private_browsing": true
