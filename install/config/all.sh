@@ -9,3 +9,4 @@ source install/config/localdb.sh
 source install/config/mimetypes.sh
 source install/config/snapper.sh
 source install/config/voxtype.sh
+source install/config/firefox.sh
