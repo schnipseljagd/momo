@@ -6,7 +6,7 @@ sudo tee /etc/firefox/policies/policies.json >/dev/null <<'EOF'
     "Homepage": {
       "StartPage": "previous-session"
     },
-    "DisplayBookmarksToolbar": "default-off",
+    "DisplayBookmarksToolbar": false,
     "ExtensionSettings": {
       "pywalfox@frewacom.org": {
         "installation_mode": "normal_installed",
