@@ -6,11 +6,9 @@ It borrows concepts and code from [Omarchy](https://github.com/basecamp/omarchy)
 ## Installation
 
 1. Install CachyOS with Limine and Btrfs but don't pick a desktop environment.
-2. Install Momo directly from the Git repository:
+2. Boot into Momo (this may take a while):
 ```bash
-git clone https://github.com/schnipseljagd/momo.git ~/.local/share
-cd ~/.local/share/momo
-./install.sh
+./boot.sh
 ```
 
 ## Commands
