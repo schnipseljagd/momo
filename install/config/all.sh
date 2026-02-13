@@ -10,3 +10,5 @@ source install/config/mimetypes.sh
 source install/config/snapper.sh
 source install/config/voxtype.sh
 source install/config/firefox.sh
+source install/config/ghostty.sh
+source install/config/dsearch.sh
