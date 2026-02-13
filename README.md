@@ -16,9 +16,9 @@ It borrows concepts and code from [Omarchy](https://github.com/basecamp/omarchy)
     - `Base-devel + Common packages`
     - `CPU specific Microcode update packages`
 
-2. Boot into Momo (this may take a while):
+2. Install Momo (this may take a while):
 ```bash
-./boot.sh
+curl -fsSL https://raw.githubusercontent.com/schnipseljagd/momo/refs/heads/main/boot.sh | bash
 ```
 
 ## Commands
