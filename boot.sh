@@ -19,7 +19,7 @@ sudo pacman -Syu --noconfirm --needed git
 REPO="${MOMO_REPO:-schnipseljagd/momo}"
 echo -e "\nCloning from: https://github.com/${REPO}.git"
 rm -rf ~/.local/share/momo/
-git clone "https://github.com/${REPO}.git" ~/.local/share/momo >/dev/null
+git clone --recurse-submodules "https://github.com/${REPO}.git" ~/.local/share/momo >/dev/null
 
 # Use custom branch if instructed, otherwise default to master
 REF="${MOMO_REF:-main}"
