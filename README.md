@@ -7,7 +7,15 @@ It borrows concepts and code from [Omarchy](https://github.com/basecamp/omarchy)
 
 ## Installation
 
-1. Install CachyOS with Limine and Btrfs but don't pick a desktop environment.
+1. Install a fresh CachyOS with:
+  - Limine as bootloader
+  - Erase disk (auto partitioning) with Btrfs and Encrypt system
+  - No Desktop environment
+  - Remove any additional packages but keep:
+    - `CachyOS Packages`
+    - `Base-devel + Common packages`
+    - `CPU specific Microcode update packages`
+
 2. Boot into Momo (this may take a while):
 ```bash
 ./boot.sh
