@@ -30,6 +30,3 @@ cd -
 
 echo -e "\nInstallation starting..."
 source ~/.local/share/momo/install.sh
-
-echo -e "\nStarting niri..."
-niri-session
