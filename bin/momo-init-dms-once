@@ -1,0 +1,15 @@
+#!/bin/bash
+set -euo pipefail && cd "$(dirname "${BASH_SOURCE[0]}")/.."
+
+# Configure DMS wallpaper & sync the greeter once on the first niri run
+mkdir -p ~/.local/state/momo
+if [ ! -f ~/.local/state/momo/dms-initiated.marker ]; then
+  # configure dms
+  dms ipc call profile setImage ~/.local/share/momo/assets/logos/momo-logo-small.jpg
+  dms ipc call wallpaper set ~/.local/share/momo/assets/wallpapers/momo-olive-grove-wallpaper.png
+
+  # Print status
+  dms greeter status
+
+  touch ~/.local/state/momo/dms-initiated.marker
+fi

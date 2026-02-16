@@ -29,8 +29,25 @@ command = "dms-greeter --command niri -C /etc/greetd/niri.kdl"
 user = "greeter"
 EOF
 
-# Automatically sync the system greeter with the logged in user's wallpaper, themes, fonts, etc.
-dms greeter sync
+# Add your user to the greeter group
+sudo usermod -aG greeter "$USER"
+
+# Set up ACL permissions on parent directories
+setfacl -m u:greeter:x ~
+setfacl -m u:greeter:x ~/.config
+setfacl -m u:greeter:x ~/.local
+setfacl -m u:greeter:x ~/.cache
+setfacl -m u:greeter:x ~/.local/state
+
+# Set group permissions on DMS config directories
+sudo chgrp -R greeter ~/.config/DankMaterialShell
+sudo chmod -R g+rX ~/.config/DankMaterialShell
+
+sudo chgrp -R greeter ~/.local/state/DankMaterialShell
+sudo chmod -R g+rX ~/.local/state/DankMaterialShell
+
+sudo chgrp -R greeter ~/.cache/quickshell
+sudo chmod -R g+rX ~/.cache/quickshell
 
 # Create configuration symlinks
 sudo ln -sf ~/.config/DankMaterialShell/settings.json /var/cache/dms-greeter/settings.json
@@ -40,5 +57,3 @@ sudo ln -sf ~/.cache/DankMaterialShell/dms-colors.json /var/cache/dms-greeter/co
 # Fix broken permissions
 sudo chgrp -R greeter /var/cache/dms-greeter
 sudo chmod -R g+rX,o+rX /var/cache/dms-greeter
-
-dms greeter status

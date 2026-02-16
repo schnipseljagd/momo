@@ -1,0 +1,11 @@
+[Unit]
+Description=Runs momo-init-dms-once after dms started
+PartOf=dms.service
+After=dms.service
+
+[Service]
+ExecStart=%h/.local/share/momo/bin/momo-init-dms-once
+Type=oneshot
+
+[Install]
+WantedBy=dms.service
