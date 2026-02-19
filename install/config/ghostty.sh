@@ -1,3 +1,5 @@
+# Make sure the directory exists
+mkdir -p ~/.config/ghostty
 # Set dank theme
 echo "theme = dankcolors" >>~/.config/ghostty/config
 # Disable excessive notifications
