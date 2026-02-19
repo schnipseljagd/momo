@@ -2,6 +2,7 @@
 set -euo pipefail && cd "$(dirname "${BASH_SOURCE[0]}")/../.."
 
 source install/config/config.sh
+source install/config/cachyos.sh
 source install/config/dms.sh
 source install/config/greetd.sh
 source install/config/input-group.sh
