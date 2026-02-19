@@ -1,12 +1,16 @@
 #!/bin/bash
 set -euo pipefail && cd "$(dirname "${BASH_SOURCE[0]}")/.."
 
-# Configure DMS wallpaper & sync the greeter once on the first niri run
+# Configure DMS once on the first niri run
 mkdir -p ~/.local/state/momo
 if [ ! -f ~/.local/state/momo/dms-initiated.marker ]; then
-  # configure dms
+  # configure DMS wallpaper
   dms ipc call profile setImage ~/.local/share/momo/assets/logos/momo-logo-small.jpg
   dms ipc call wallpaper set ~/.local/share/momo/assets/wallpapers/momo-olive-grove-wallpaper.png
+
+  # Use DMS colors for Firefox
+  dms restart
+  ln -sf ~/.cache/wal/dank-pywalfox.json ~/.cache/wal/colors.json
 
   # Print status
   dms greeter status

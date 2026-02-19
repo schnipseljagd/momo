@@ -22,7 +22,3 @@ sudo tee /etc/firefox/policies/policies.json >/dev/null <<'EOF'
   }
 }
 EOF
-
-# Use DMS colors
-dms restart
-ln -sf ~/.cache/wal/dank-pywalfox.json ~/.cache/wal/colors.json
