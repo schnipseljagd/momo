@@ -43,9 +43,11 @@ setfacl -m u:greeter:x ~/.local/state
 sudo chgrp -R greeter ~/.config/DankMaterialShell
 sudo chmod -R g+rX ~/.config/DankMaterialShell
 
+mkdir -p ~/.local/state/DankMaterialShell
 sudo chgrp -R greeter ~/.local/state/DankMaterialShell
 sudo chmod -R g+rX ~/.local/state/DankMaterialShell
 
+mkdir -p ~/.cache/quickshell
 sudo chgrp -R greeter ~/.cache/quickshell
 sudo chmod -R g+rX ~/.cache/quickshell
 
