@@ -14,5 +14,9 @@ if [ ! -f ~/.local/state/momo/dms-initiated.marker ]; then
   # Print status
   dms greeter status
 
+  # Create marker so next time this is not executed again
   touch ~/.local/state/momo/dms-initiated.marker
+
+  # Restart DMS
+  dms restart
 fi

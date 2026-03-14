@@ -28,8 +28,10 @@ cd ~/.local/share/momo
 git fetch origin "${REF}" && git checkout "${REF}"
 cd -
 
+# Install everything
 echo -e "\nInstallation starting..."
 source ~/.local/share/momo/install.sh
 
+# Start niri & DMS
 echo -e "\nStarting niri..."
 niri-session
