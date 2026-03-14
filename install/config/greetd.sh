@@ -59,3 +59,6 @@ sudo ln -sf ~/.cache/DankMaterialShell/dms-colors.json /var/cache/dms-greeter/co
 # Fix broken permissions
 sudo chgrp -R greeter /var/cache/dms-greeter
 sudo chmod -R g+rX,o+rX /var/cache/dms-greeter
+
+# Enable the greeter
+sudo systemctl enable greetd
