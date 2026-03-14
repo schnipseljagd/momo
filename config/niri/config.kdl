@@ -711,6 +711,7 @@ binds {
 
     // My Specifics
     Mod+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
+    Mod+B hotkey-overlay-title="Open a Browser: firefox" { spawn "firefox"; }
 }
 
 include "dms/colors.kdl"
